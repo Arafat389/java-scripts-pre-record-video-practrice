@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Scripts</title>
+    <link rel="stylesheet" href="./scripts.js">
+</head>
+<body>
+    <h1>hello world</h1>
+
+
+
+
+    <script>
+        document.write("First java program write.");
+        document.write("First java program write.");
+        document.write("First java program write.");
+        document.write("First java program write.");
+        document.write("<br>")
+
+        //js variable
+
+        var x = 20 ;
+        var y = 30 ;
+        var z = x+y;
+        document.write(z);
+        document.write("<br>")
+    
+        var X = 40 ;
+        var x = 30 ;
+        var z = X+x;
+        document.write(z);
+
+        /* Data type
+        1 Primitive data type*/
+
+        var x = "Arafat"; //string
+        var y = 100 ; // number
+        var z =  true; //boolean
+        var a = false; // boolean
+        var b ; //undefined
+        var c = null; //null
+
+        document.write("<br>")
+        document.write("<br>")
+
+        document.write(x);
+        document.write("<br>")
+        document.write(y);
+        document.write("<br>")
+        document.write(z);
+        document.write("<br>")
+        document.write(a);
+        document.write("<br>")
+        document.write(b);
+        document.write("<br>")
+        document.write(c);
+
+        /*data type
+        2 non primitive data type  */
+
+        document.write("<br>") 
+        document.write("<br>")
+
+        var A = {  //Object data type
+            name :"Arafat",
+            age :20,
+            city : "Dhaka",
+        }
+        document.write(A);
+        document.write("<br>")
+        document.write(A . name);
+        document.write("<br>")
+        document.write(A . age);
+        document.write("<br>")
+        document.write(A. city);
+
+        // Array data type
+
+        document.write("<br>")
+        document.write("<br>")
+        
+        var A = ["Dhaka","Kanpur","Rajshahi"]
+        document.write(A);
+
+        document.write("<br>")
+        document.write("<br>")
+        
+
+        // If else statement
+
+        // if
+        var age = 20;
+        var city = "dhaka"
+        if(age>18){
+            document.write('your are adult.')
+        }
+
+        document.write("<br>")
+
+        var age = 20;
+        var city = "dhaka"
+        if(age>18 && city == "dhaka"){
+            document.write('your are adult and city dhaka.')
+        }
+
+        // if else
+
+        document.write("<br>")
+
+        var age = 15;
+        var city = "dhaka"
+        if(age>18 && city == "dhaka"){
+            document.write('your are adult and city dhaka.')
+        }
+        else{
+            document.write('your are not adult and city dhaka.')
+        }
+
+
+        // if else if
+
+        document.write("<br>")
+        document.write("<br>")
+
+        var mark = 100;
+        if (mark>=80 && mark<=100){
+            document.write("A+");
+        }
+        else if (mark<80 && mark>=70){
+            document.write("A");
+        }
+        else if (mark<70 && mark>=60){
+            document.write("A-");
+        }
+        else if (mark<60 && mark>=50){
+            document.write("B");
+        }
+        else if (mark<50 && mark>=40){
+            document.write("c");
+        }
+        else if (mark<40 && mark>=33){
+            document.write("D");
+        }
+        else{
+            document.write("F");
+        }
+
+
+        // Switch case
+        
+        document.write("<br>")
+        document.write("<br>")
+
+        var mark = 33;
+
+        switch(true){
+            
+            case (mark>=80 && mark<=100):
+                document.write("A+");
+            break;
+            case(mark<80 && mark>=70):
+                 document.write("A");
+            break;
+            case(mark<70 && mark>=60):
+                document.write("A-");
+            break;
+            case(mark<60 && mark>=50):
+                document.write("B");
+            break;
+            case(mark<50 && mark>=40):
+                document.write("C");
+            break;
+            case(mark<40 && mark>=33):
+                document.write("D");
+            break;
+            case (mark<33):
+                document.write("F");
+            break;
+            
+        }
+        document.write("<br>")
+        document.write("<br>")
+
+        var mark = 33;
+
+        switch(true){
+            
+            case (mark>=80 && mark<=100):
+                document.write("A+");
+            break;
+            case(mark<80 && mark>=70):
+                 document.write("A");
+            break;
+            case(mark<70 && mark>=60):
+                document.write("A-");
+            break;
+            case(mark<60 && mark>=50):
+                document.write("B");
+            break;
+            case(mark<50 && mark>=40):
+                document.write("C");
+            break;
+            case(mark<40 && mark>=33):
+                document.write("D");
+            
+            case (mark<33):
+                document.write("F");
+            break;
+            
+        }
+
+
+        // For loop  (Entry control loop)
+
+        document.write("<br>");
+
+        var name ;
+        for(name = 0; name<10; name++){
+            document.write( name + "Arafat <br>");
+        }
+        var i ;
+        for(i = 0; i<30; i=i+2){
+            document.write(i+"<button>submit</button><br>");
+        }
+
+
+        // continue
+
+        document.write("<br>");
+
+        var i ;
+        for(i = 0; i<30; i=i+2){
+
+            if(i==6 || i==20){
+                break;
+            }
+            document.write(i+"<button>submit</button><br>");
+        }
+
+        // continue
+
+        document.write("<br>");
+        document.write("<br>");
+
+        var i ;
+        for(i = 0; i<30; i=i+2){
+
+            if(i==6 || i==20){
+                continue;  //kono value ke skip korar jono continue babohar kori
+            }
+            document.write(i+"<button>submit</button><br>");
+        }
+
+
+         // While loop  (Entry control loop)
+        
+        document.write("<br>");
+        document.write("<br>");
+
+        var i = 0 ;
+        while(i<30){
+            document.write(i+"<button>While button</button><br>");
+            i = i+1;
+        }
+
+
+         // Do While loop  (Exit control loop)
+        
+        document.write("<br>");
+        document.write("<br>");
+
+        var i = 0 ;
+        do{
+            document.write(i+"<button> DO While button</button><br>");
+            i = i+1;
+        }while(i<30);
+
+
+        document.write("<br>");
+        document.write("<br>");
+
+        // Function  
+
+        function addTwoNumber(){      // (ati ber ber baboher kora jai)
+            var num1 = 10 ;
+            var num2 = 20 ;
+            var num3 = num1 + num2 ;
+            document.write(num3+"<br>");
+        }
+
+        addTwoNumber();
+
+        // Function  parameter 
+
+        function TwoNumber(num4 , num5 ){      // (ati ber ber baboher kora jai)
+            
+            var num6 = num4 + num5 ;
+            document.write(num6+"<br>");
+        }
+
+        TwoNumber(10 , 50);
+        TwoNumber(10 , 60);
+        TwoNumber(10 , 70);
+        TwoNumber(10 , 80);
+        TwoNumber(10 , 90);
+
+
+        // Function return 
+
+        document.write("<br>");
+        document.write("<br>");
+
+        function twoNumberAdd(n1,n2){
+            return n1+n2;
+        }
+        var newValue=twoNumberAdd(5,10)+5;
+        document.write(newValue);
+
+
+
+
+    </script>
+</body>
+</html>
